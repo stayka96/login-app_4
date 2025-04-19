@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>غير متصل بالإنترنت - Bricool</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .container {
+      max-width: 90%;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      color: #0066FF;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+    .button {
+      background-color: #0066FF;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button:hover {
+      background-color: #0055DD;
+    }
+    .offline-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="offline-icon">📶</div>
+    <h1>أنت غير متصل بالإنترنت</h1>
+    <p>يبدو أنك غير متصل بالإنترنت حاليًا. يرجى التحقق من اتصالك والمحاولة مرة أخرى.</p>
+    <p>يمكنك الوصول إلى بعض الميزات في وضع عدم الاتصال، ولكن للحصول على تجربة كاملة، ستحتاج إلى اتصال بالإنترنت.</p>
+    <button class="button" onclick="window.location.reload()">إعادة المحاولة</button>
+  </div>
+</body>
+</html>
